@@ -2,15 +2,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { ShapeComponent } from './modules/design-token/shape/shape.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ShapeComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: [ShapeComponent]
 })
 export class AppModule { }

@@ -1,0 +1,10 @@
+@import "./color-text-contrast.mixin.scss";
+@import "./_color.variables.scss";
+
+.mds-c-background{background-color:$background; @include text-contrast($background);}
+.mds-c-line{background-color:$line; @include text-contrast($line);}
+.mds-c-inactive{background-color:$inactive; @include text-contrast($inactive);}
+.mds-c-value1{background-color:$value1; @include text-contrast($value1);}
+.mds-c-value2{background-color:$value2; @include text-contrast($value2);}
+.mds-c-value3{background-color:$value3; @include text-contrast($value3);}
+.mds-c-value4{background-color:$value4; @include text-contrast($value4);}

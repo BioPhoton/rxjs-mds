@@ -1,0 +1,15 @@
+@import "./styles/_color.helpers.scss";
+@import "./../../../styles/_mds.helpers.scss";
+
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    text-transform: capitalize;
+  }
+}

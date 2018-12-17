@@ -1,0 +1,89 @@
+@import "./../modules/design-token/color/styles/_color.helpers.scss";
+@import "./../modules/design-token/font/styles/_font.variables.scss";
+
+.mds-diagram {
+  font-size: 20px;
+
+  .mds-text {
+    margin: 0px;
+    padding: 0px;
+    overflow-wrap: break-word;
+    font-family: $font-family;
+    font-size: $font-size-big;
+    font-weight: $font-style-normal;
+    color: $line;
+    letter-spacing: 0.504em;
+
+    &.mds-active {
+    }
+
+    &.mds-inactive {
+      color: $inactive;
+    }
+  }
+
+  .mds-text-observable {
+    @extend .mds-text;
+    font-weight: $font-style-bold;
+  }
+
+  .mds-text-operator {
+    @extend .mds-text;
+  }
+
+  .mds-text-timespan {
+    @extend .mds-text;
+    font-size: $font-size-medium;
+  }
+
+  .mds-text-value {
+    @extend .mds-text-timespan
+  }
+
+  .mds-text-legend {
+    @extend .mds-text;
+    font-size: $font-size-small;
+    font-weight: $font-style-bold;
+  }
+
+
+  .mds-block {
+    width: $font-size-big;
+    height: $font-size-big;
+    border: 1px solid #eeeeee;
+
+    &.mds-active {
+      border-color: $line;
+    }
+
+    &.mds-inactive {
+    }
+  }
+
+  .mds-value {
+    &.mds-inactive {
+      color: $line;
+      background-color: $inactive;
+    }
+
+    &.mds-active {
+    }
+  }
+
+  .mds-inactive {
+    color: $inactive;
+  }
+
+}
+
+.grid {
+  display: flex;
+  &.grid-v {
+    flex-direction: column;
+  }
+  &.grid-h {
+    flex-direction: row;
+  }
+  .tile {;
+  }
+}
