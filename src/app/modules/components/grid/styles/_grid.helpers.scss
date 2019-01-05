@@ -1,0 +1,5 @@
+@import "grid.mixins";
+
+.grid {
+  @include grid-background()
+}

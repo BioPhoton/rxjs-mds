@@ -9,7 +9,7 @@ import {Component, Input, OnInit} from '@angular/core';
         <div *ngFor="let c of colors"
           [ngClass]="c.className"
           class="box">
-          <p class="mds-text-operator">{{c.description}}</p>
+          <p class="mds-text-value">{{c.description}}</p>
         </div>
       </div>
     </div>

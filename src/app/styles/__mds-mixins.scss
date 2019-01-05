@@ -1,0 +1,10 @@
+@mixin rgba-background-color($hexcolor, $opacity) {
+  background-color: $hexcolor;
+  background-color: rgba($hexcolor, $opacity);
+}
+
+@mixin rgba-color($hexcolor, $opacity) {
+  color: $hexcolor;
+  color: rgba($hexcolor, $opacity);
+}
+

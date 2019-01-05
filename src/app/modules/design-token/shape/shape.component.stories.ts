@@ -1,13 +1,29 @@
 import {withNotes} from '@storybook/addon-notes';
-import {storiesOf} from '@storybook/angular';
-import markdownText from './shape.component.md';
+import {moduleMetadata, storiesOf} from '@storybook/angular';
+import overviewMarkdownText from './shape.component.md';
+import {ShapeComponent} from './shape.component';
+import {ValueModule} from '../../components/value/value.module';
 
 export const shapeStories = storiesOf('Design Token/Shape', module)
   .addDecorator(withNotes)
+  .addDecorator(
+    moduleMetadata({
+      imports: [ValueModule],
+    })
+  )
   .add(
     'overview',
     () => (''),
     {
-      notes: {markdown: markdownText}
+      notes: {markdown: overviewMarkdownText}
     }
+  )
+  .add(
+    'Type',
+    () => ({
+      component: ShapeComponent,
+      props: {
+        shapeTypes: ['rectangle']
+      },
+    })
   );

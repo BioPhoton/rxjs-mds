@@ -1,0 +1,40 @@
+@import "./../../design-token/color/styles/index";
+@import "./../../design-token/font/styles/index";
+@import "./../../design-token/shape/styles/index";
+@import "./../../../styles/index.scss";
+
+.mds-value {
+  margin: 0;
+  padding: 0;
+  width: 2em;
+  height: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.mds-inactive {
+    color: $inactive;
+  }
+
+  &.mds-size-normal {
+    width: 2em;
+    height: 2em;
+  }
+
+  &.mds-size-small {
+    width: 1em;
+    height: 1em;
+  }
+
+  .mds-shape {
+
+  }
+
+  .mds-value-content {
+    @extend .mds-fsi-medium;
+    @extend .mds-fst-normal;
+    line-height: 1em;
+  }
+
+}
+

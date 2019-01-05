@@ -6,6 +6,12 @@ import { ValueComponent } from './value.component';
   imports: [
     CommonModule
   ],
-  declarations: [ValueComponent]
+  declarations: [ValueComponent],
+  exports: [ValueComponent]
 })
-export class ValueModule { }
+export class ValueModule {
+
+  constructor() {
+    console.log('ValueModule');
+  }
+}
