@@ -13,7 +13,7 @@ export const fontStories = storiesOf('Design Token/Font', module)
   .addDecorator(withNotes)
   .add(
     'Overview',
-    () => (''),
+    () => ({template: ''}),
     {
       notes: {markdown: fontMarkdownText}
     }

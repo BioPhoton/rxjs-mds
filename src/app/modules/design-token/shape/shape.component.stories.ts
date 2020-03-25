@@ -13,7 +13,7 @@ export const shapeStories = storiesOf('Design Token/Shape', module)
   )
   .add(
     'overview',
-    () => (''),
+    () => ({template:''}),
     {
       notes: {markdown: overviewMarkdownText}
     }
