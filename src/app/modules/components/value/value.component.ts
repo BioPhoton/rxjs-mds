@@ -12,14 +12,13 @@ import {Size} from '../../design-token/size/token-values';
       <div class="mds-shape">
         <div class="mds-value-content">{{content}}</div>
       </div>
-      
     </div>
   `,
   styleUrls: ['./value.component.scss']
 })
 export class ValueComponent implements OnInit {
   private colorsNames = ColorsNames;
-  @Input() color: ColorsNames = 'mds-c-' + ColorsNames.Line;
+  @Input() color: string = 'mds-c-' + ColorsNames.Line;
   @Input() content: string;
   @Input() shape: string = 'mds-shape-' + DEFAULT_SHAPES.rectangle;
   @Input() size: string = 'mds-size-' + Size.normal;

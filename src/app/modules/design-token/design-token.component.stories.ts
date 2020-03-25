@@ -6,7 +6,7 @@ export const designTokenStories = storiesOf('Design Token', module)
   .addDecorator(withNotes)
   .add(
     'general',
-    () => (``),
+    () => ({template: ``}),
     {
       notes: {markdown: markdownText}
     }
